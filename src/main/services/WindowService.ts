@@ -55,6 +55,7 @@ export class WindowService {
       titleBarStyle: isLinux ? 'default' : 'hidden',
       titleBarOverlay: theme === 'dark' ? titleBarOverlayDark : titleBarOverlayLight,
       backgroundColor: isMac ? undefined : theme === 'dark' ? '#181818' : '#FFFFFF',
+      backgroundMaterial: 'acrylic',
       trafficLightPosition: { x: 8, y: 12 },
       ...(process.platform === 'linux' ? { icon } : {}),
       webPreferences: {
